@@ -1,0 +1,19 @@
+/* CSS goes here! */
+#main-head {
+	font-family: 'Gilda Display', serif;
+}
+
+a {
+	/* styles for your links */
+
+
+}
+
+.story {
+	height: 18em;
+}
+
+/*.featured-image {
+	z-index: 1000;
+	position: relative;
+}*/

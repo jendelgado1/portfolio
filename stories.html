@@ -1,0 +1,36 @@
+{% extends "_portfolio.html" %}
+
+{% block content %}
+
+<style>  
+img {max-width: 100%;}
+.portfolio-row{margin-bottom: 30px;}
+.photo_credit{        
+  font-size:12px;
+  color:#999;
+
+}
+
+</style>
+
+
+
+<div class="container">
+<div id="main-head" class="col-md-offset-1">
+  <h1> Jennifer Delgado's website </h1>
+</div>
+
+<div class="row portfolio-row">
+{% for story in stories %}
+  <div class="col-md-3 story"> 
+     <img src="{{story.image}}" />
+  	  <p class="photo_credit"> Photo by {{story.photo_credit}} </p>
+  </div>
+  <div class="col-md-3 story">
+    <h2><a href="{{story.link}}" target="_blank">{{story.headline}}</a></h2>
+  </div>
+{% endfor %}
+</div>
+
+
+{% endblock content %}

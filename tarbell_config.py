@@ -8,7 +8,7 @@ Tarbell project configuration
 NAME = "portfolio"
 
 # Descriptive title of project
-TITLE = "jennifer delgado&#39;s website"
+TITLE = "jennifer delgado"
 
 # Google spreadsheet key
 SPREADSHEET_KEY = "0AiiCaqIWHDnpdHF1U0g2cW9DQmNnNjRTa2VJd0Fxd2c"
@@ -20,14 +20,13 @@ EXCLUDES = ["*.md", "requirements.txt"]
 # CREATE_JSON = True
 
 # S3 bucket configuration
-#S3_BUCKETS = {
-    # Provide target -> s3 url pairs, such as:
-    #     "mytarget": "mys3url.bucket.url/some/path"
-    # then use tarbell publish mytarget to publish to it
-#}
+S3_BUCKETS = {
+    'production': 'www.jenniferdelgado.net',
+    'staging': 'www.jenniferdelgado.net',
+}
 
 # Default template variables
 DEFAULT_CONTEXT = {
     'name': 'portfolio',
-    'title': "jennifer delgado's website"
+    'title': "jennifer delgado"
 }
