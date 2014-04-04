@@ -1,19 +1,76 @@
 /* CSS goes here! */
 #main-head {
-	font-family: 'Gilda Display', serif;
+	font-family: 'Nothing You Could Do', cursive;
+	margin-top: 20%;
+	text-align: center;
+	color:white;
+	font-size: 40px;
+}
+
+
+#click-injunction {
+	font-family: 'Nothing You Could Do', cursive;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+#main-font {
+	font-family: 'Nothing You Could Do', cursive;
 }
 
 a {
 	/* styles for your links */
 
-
 }
+
+
+ body {
+  padding-top: 120px;
+ }
 
 .story {
 	height: 18em;
 }
 
-/*.featured-image {
-	z-index: 1000;
-	position: relative;
-}*/
+.boxes li {
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+
+.navbar-default {
+	background-color: white;
+}
+
+.navbar-brand {
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 3em;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a
+
+ {
+	font-weight: bold;
+	background-color: white; 
+}
+
+.photo img {
+	height: 196px;
+	overflow: hidden;
+	width:261px;
+	margin-bottom: 20px;
+}
+
+.me-pic2 {
+	padding-top: 30px;
+	padding-left: 10px;
+}
+
+.me-pic {
+	padding-top: 10px;
+}
