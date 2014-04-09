@@ -18,15 +18,18 @@ img {max-width: 100%;}
 
 
 
-<div class="container">
+<div class="story container">
 <div class="row portfolio-row">
 {% for story in stories %}
   <div class="col-md-3 story"> 
+    <div class='img-container'>
      <img src="{{story.image}}" />
+   </div>
   	  <p class="photo_credit"> Photo by {{story.photo_credit}} </p>
   </div>
   <div class="col-md-3 story">
-    <h2><a href="{{story.link}}" target="_blank">{{story.headline}}</a></h2>
+    <h4><a href="{{story.link}}" target="_blank">{{story.headline}}</a></h4>
+    <p>{{ story.description }}</p>
   </div>
 {% endfor %}
 </div>
