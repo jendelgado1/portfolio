@@ -16,10 +16,10 @@
     {# Collect the nav links, forms, and other content for toggling #}
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav boxes">
-        <li class="active"><a href="about_me.html">About Me</a></li>
-        <li><a href="stories.html">Stories</a></li>
-        <li><a href="photos.html">Photos</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li {% if PATH=="about_me.html"%} class="active" {%endif%}><a href="about_me.html">About Me</a></li>
+        <li {% if PATH=="stories.html"%} class="active" {%endif%}><a href="stories.html">Stories</a></li>
+        <li {% if PATH=="photos.html"%} class="active" {%endif%}><a href="photos.html">Photos</a></li>
+        <li {% if PATH=="resume.html"%} class="active" {%endif%}><a href="resume.html">Resume</a></li>
       </ul>
 
       <ul class="social-menu nav navbar-nav navbar-right">
